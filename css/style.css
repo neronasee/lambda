@@ -1,0 +1,253 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic|Yeseva+One|Lato|Gentium+Book+Basic:700);
+
+body{
+	font: 400 16px/1.5 'Lato', sans-serif;
+	color: #4c4c4c;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+	color: #ffffff;
+	font-size: 18px;
+	line-height: 55px;
+	background-color: rgba(255, 255, 255, 0.28);
+	border: 1px solid #fff;
+	padding: 0 51px;
+	min-height: 57px;
+	text-decoration: none;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+	background-color:  rgba(0, 0, 0, 0.7);
+	border-color: #000;
+}
+input[type="submit"]:active,
+input[type="button"]:active,
+button:active,
+.ba-button:active{
+	position: relative;
+	top: 1px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1210px;
+}
+.ba-section {
+	padding: 100px 0;
+}
+.ba-intro {
+	background: url(../img/intro_bg.jpg) 50% no-repeat;
+	background-size: cover;
+}
+.ba-header {
+	position: fixed;
+	background: linear-gradient(to bottom, rgba(0,0,0,.5), transparent);
+	width: 100%;
+}
+.ba-logo {
+	margin: 2px 0 10px;
+}
+.ba-header__social {
+	line-height: 110px;
+}
+.ba-header__social a{
+	color: #dab33e;
+	font-size: 21px;
+	margin-left: 14px;
+}
+.ba-header__social a:hover {
+	color: #FAE931;
+}
+.ba-header__social a:first-child {
+	margin-left: 0;
+}
+.ba-menu {
+	list-style: none;
+	margin: 0;
+	margin-right: 20px;
+	padding: 0;
+}
+.ba-menu li {
+	display: inline-block;
+	margin-left: 48px;
+}
+.ba-menu li:first-child {
+	margin: 0;
+}
+
+.ba-menu a {
+	font-family: 'Gentium Book Basic', sans-serif;;
+	color:  #ffffff;
+	font-size: 21px;
+	line-height: 110px;
+	font-weight: 700;
+	text-decoration: none;
+	display: block;
+	position: relative;
+}
+.ba-menu a:before {
+	display: block;
+	content: '';
+	position: absolute;
+	height: 3px;
+	width: 100%;
+	background-color: rgba(255,255,255,.7);
+	opacity: 0;
+	transition: opacity .3s ease-in;
+}
+.ba-menu a:hover:before {
+	opacity: 1;
+}
+@media (max-width: 959px) {
+	.ba-menu {
+		display: none;
+	}
+}
+.ba-intro-content {
+	padding: 205px 0 145px;
+}
+.ba-button--intro {
+	margin: 34px 15px 0;
+}
+
+.ba-intro__title {
+	font-family: 'Yeseva One', sans-serif;
+	color: #ffffff;
+	font-size: 90px;
+	line-height: 1.35;
+	font-weight: 400;
+	text-shadow: 0px 1px 2px rgba(1, 1, 1, 0.64);
+	max-width: 970px;
+	margin: 0 auto;
+	padding-bottom: 64px;
+	background: url(../img/intro_decoration.png) 50% 100% no-repeat;
+}
+@media (max-width: 767px) {
+	.ba-intro__title {
+		font-size: 70px;
+	}
+}
+@media (max-width: 479px) {
+	.ba-intro__title {
+		font-size: 40px;
+	}
+}
+.ba-about {
+	background:
+	 linear-gradient(-45deg, rgba(0,0,0,.15), transparent),
+	 url(../img/about_bg.jpg) 50% no-repeat;
+	           ;
+	background-size: auto, cover;
+	box-shadow: 0px 0px 50px 0px rgba(1, 1, 1, 0.14) inset;
+	padding: 50px 0 10px;
+}
+.ba-about__text {
+	padding: 20px 0 100px 62px;
+	width: 43%;
+}
+.ba-about__title {
+	font-family: 'Yeseva One', sans-serif;
+	color: #cc9900;
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 1;
+	padding-bottom: 40px;
+	background: url(../img/about-decor.png) 50% 100% no-repeat;
+	margin-bottom: 25px;
+}
+.ba-about__text p {
+	max-width: 430px;
+	margin: 0 auto;
+}
+.ba-about__img {
+	display: inline-block;
+	margin-left: 70px;
+	margin-top: 49px;
+}
+.ba-about-img {
+	width: 52%;
+	margin-left: 20px;
+}
+
+@media (max-width: 767px) {
+	.ba-about__text,
+	.ba-about-img {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		float: none;
+	}
+}
+.ba-ingredients {
+	background: url(../img/ingredients_bg.jpg) 50% no-repeat;
+	background-size: cover;
+}
+.ba-ingredients-text {
+	max-width: 570px;
+	color:  #ffffff;
+	background: rgba(0, 0, 0, .67);
+	padding: 70px 78px;
+}
+.ba-ingredients-text__title {
+	font-family: 'Yeseva One', sans-serif;
+	font-size: 36px;/* Approximation due to font substitution */
+	font-weight: 400;
+	padding-bottom: 33px;
+	background: url(../img/igr_devider.png) 50% 100% no-repeat;
+	margin: 0;
+}
+.ba-ingredients p {
+	max-width: 430px;
+	margin: 25px 0 68px;
+}
+.ba-ingredients-text__img {
+	margin: 0 10px;
+}
+@media (max-width: 479px) {
+	.ba-ingredients-text {
+		padding: 10px 18px;
+	}
+}
