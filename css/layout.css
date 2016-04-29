@@ -131,10 +131,12 @@ img {
 .ba-grid > [class*="ba-width-"] {
     float: left;
     padding-left: 20px;
+    padding-top: 20px;
 }
 
 .ba-grid {
     margin-left: -20px;
+    margin-top: -20px;
 }
 
 
